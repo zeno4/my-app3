@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: guestbook-route
+  namespace: test-argocd
+spec:
+  host: guestbook-ui-test-argocd.apps-crc.testing
+  port:
+    targetPort: 80 
+  to:
+    kind: Service
+    name: guestbook-ui

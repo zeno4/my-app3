@@ -18,4 +18,4 @@ spec:
           privileged: true
           name: guestbook-ui
           ports:
-            - containerPort: 8080
+            - containerPort: 80
